@@ -15,16 +15,17 @@ public:
             else
                 high=mid-1;
         }
-        int ans=nums.size();
-        if(!flag){
-            for(int i=0;i<nums.size();i++){
-                if(nums[i]>target && i!=nums.size()){
-                    ans=i;
-                    break;
-                }
-            }
-        }
-        return ans;
+        // int ans=nums.size();
+        // if(!flag){
+        //     for(int i=0;i<nums.size();i++){
+        //         if(nums[i]>target && i!=nums.size()){
+        //             ans=i;
+        //             break;
+        //         }
+        //     }
+        // }
+        // return ans;
+        return low;
 
     }
 };
