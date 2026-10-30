@@ -6,9 +6,7 @@ public:
         sort(s1.begin(),s1.end());
         if(n>m)return false;
         int left=0;
-        unordered_map<char,int> mp;
         for(int right=0;right<s2.size();right++){
-            mp[s2[right]]++;
             if(right-left+1==n){
                 string s=s2.substr(left,right-left+1);
                 sort(s.begin(),s.end());
